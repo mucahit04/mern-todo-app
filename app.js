@@ -9,7 +9,7 @@ app.use(enableCORS);
 app.use(bodyParser.json()); // for parsing application/json
 app.use("/todos", todosRouter);
 
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 const server = () => {
 	app.listen(PORT, () => {
