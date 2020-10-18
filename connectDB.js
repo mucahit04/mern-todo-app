@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const DB_URL =
 	process.env.MONGODB_URI ||
-	`mongodb+srv://todoApp:todoApp@cluster0.pdudy.mongodb.net/todo-app?retryWrites=true&w=majority`;
+	`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.pdudy.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`;
 
 const options = {
 	useNewUrlParser: true,

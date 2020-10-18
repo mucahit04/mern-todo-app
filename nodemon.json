@@ -1,0 +1,7 @@
+{
+	"env": {
+		"DB_USER": "todoApp",
+		"DB_PASSWORD": "todoApp",
+		"DB_NAME": "todo-app"
+	}
+}
