@@ -33,7 +33,11 @@ const Todo = ({ todos, completeTodo, removeTodo, updateTodo }) => {
 			)}
 			{todos.map(todo => (
 				<div className={todo.isComplete ? "todo-container complete" : "todo-container"}>
-					<div className='todo-row' key={todo.id} onClick={() => completeTodo(todo.id)}>
+					<div
+						className='todo-row'
+						key={todo.id}
+						onClick={() => completeTodo(todo.id, todo.isComplete)}
+					>
 						<p className='description'>{todo.text}</p>
 						<p className='tag'>{todo.tag}</p>
 					</div>
