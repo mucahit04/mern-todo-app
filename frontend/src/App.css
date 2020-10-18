@@ -1,0 +1,157 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial,
+		sans-serif;
+}
+
+.todo-app {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 40%;
+	min-height: 600px;
+	text-align: center;
+	margin: 128px auto;
+	border-radius: 10px;
+	padding-bottom: 32px;
+}
+
+h1 {
+	margin: 32px 0;
+	font-size: 24px;
+}
+
+.complete {
+	text-decoration: line-through;
+	opacity: 0.4;
+}
+
+.todo-form {
+	margin-bottom: 32px;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.todo-input {
+	padding: 14px 32px 14px 16px;
+	border-radius: 4px;
+	border: 2px solid #5d0cff;
+	outline: none;
+	width: 60%;
+	height: 6vh;
+	background: transparent;
+	font-size: 1em;
+	margin-right: 1%;
+}
+.todo-tag {
+	width: 25%;
+}
+
+.todo-button {
+	padding: 16px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	outline: none;
+	background: linear-gradient(90deg, rgba(93, 12, 255, 1) 0%, rgba(155, 0, 250, 1) 100%);
+	color: #fff;
+	height: 6vh;
+	text-transform: capitalize;
+	font-size: 1em;
+}
+
+.todo-input.edit {
+	border: 2px solid #149fff;
+	width: 60%;
+	height: 6vh;
+	font-size: 1em;
+}
+
+.todo-button.edit {
+	background: linear-gradient(90deg, rgba(20, 159, 255, 1) 0%, rgba(17, 122, 255, 1) 100%);
+	padding: 16px 22px;
+	font-size: 1em;
+	height: 6vh;
+}
+.todo-container {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 1%;
+	padding: 1%;
+	background: linear-gradient(90deg, rgba(255, 118, 20, 1) 0%, rgba(255, 84, 17, 1) 100%);
+	border-radius: 5px;
+}
+.todo-header {
+	display: flex;
+	justify-content: space-between;
+	width: 70%;
+	text-align: center;
+	font-size: 1.3em;
+}
+.description {
+	width: 40%;
+	text-align: left;
+	padding: 5px;
+}
+.tag {
+	width: 35%;
+	text-align: right;
+	/* padding-left: 15px; */
+}
+.todo-row {
+	display: flex;
+	justify-content: flex-start;
+	color: #fff;
+	font-size: 1.2em;
+	padding: 5px;
+	width: 100%;
+}
+
+.todo-container:nth-child(4n + 1) {
+	background: linear-gradient(90deg, rgba(93, 12, 255, 1) 0%, rgba(155, 0, 250, 1) 100%);
+}
+
+.todo-container:nth-child(4n + 2) {
+	background: linear-gradient(90deg, rgba(255, 12, 241, 1) 0%, rgba(250, 0, 135, 1) 100%);
+}
+
+.todo-container:nth-child(4n + 3) {
+	background: linear-gradient(90deg, rgba(20, 159, 255, 1) 0%, rgba(17, 122, 255, 1) 100%);
+}
+
+.icons {
+	display: flex;
+	align-items: center;
+	font-size: 24px;
+	cursor: pointer;
+}
+
+.delete-icon {
+	margin-right: 5px;
+	color: #fff;
+}
+
+.edit-icon {
+	color: #fff;
+}
+
+@media screen and (max-width: 660px) {
+	* {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial,
+			sans-serif;
+	}
+	.todo-app {
+		display: flex;
+		flex-direction: row;
+	}
+	.todo-input,
+	.todo-button {
+		font-size: 0.8em;
+	}
+}
