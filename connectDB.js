@@ -11,6 +11,10 @@ const options = {
 	useCreateIndex: true,
 };
 
+if (process.env.NODE_ENV === "production") {
+	applicationCache.use(express.static("client/build"));
+}
+
 const connectDB = server => {
 	mongoose
 		.connect(DB_URL, options)
