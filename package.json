@@ -6,7 +6,8 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"start": "nodemon app.js",
-		"dev": "concurrently \"nodemon app.js\" \"cd client && npm start\""
+		"dev": "concurrently \"nodemon app.js\" \"cd client && npm start\"",
+		"install-client": "cd client && npm install"
 	},
 	"author": "mcht",
 	"license": "ISC",
